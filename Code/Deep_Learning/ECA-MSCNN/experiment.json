@@ -1,0 +1,64 @@
+{
+  "methods": [
+    "ECA_MSCNN"
+  ],
+  "datasets": [
+    "MY_DATA"
+  ],
+  "seeds": [
+    42,
+    63,
+    84,
+    105,
+    126,
+    147,
+    168,
+    189,
+    210,
+    231
+  ],
+  "rpms": [
+    "800",
+    "1000",
+    "1200",
+    "1400",
+    "1600",
+    "1800",
+    "2000",
+    "2200",
+    "2400",
+    "2800",
+    "3000"
+  ],
+  "snrs": [
+    -12,
+    -11,
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    null
+  ],
+  "channels": [
+    "CH_06"
+  ],
+  "epochs": 100,
+  "comparison_batch_size": 64,
+  "output_root": "Results",
+  "preprocessing": {
+    "noise_power_centered": true,
+    "ae_train_dc_removal": true,
+    "window_normalization": "zscore",
+    "pooled_train_zscore": false
+  },
+  "data_root": "../../data/Laboratory_Dataset",
+  "cpu_threads": 4,
+  "device": "auto"
+}

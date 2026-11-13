@@ -1,0 +1,25 @@
+{
+  "Best_Objective": 0.000102299265563488,
+  "Best_Parameters": {
+    "base_channels": 59,
+    "dropout": 0.3089176999662375,
+    "hidden": 319,
+    "learning_rate": 0.0010079383221164382,
+    "lr_gamma": 0.40159966494523014,
+    "lr_period": 8
+  },
+  "Candidate_Epochs": 12,
+  "Dataset": "MY_DATA",
+  "Evaluations": 72,
+  "Fitness": "model_validation_cross_entropy",
+  "Implementation_Role": "paper-inspired adapted implementation",
+  "Maxiter": 3,
+  "Method": "DE-1D-CNN",
+  "Polish": false,
+  "Popsize": 3,
+  "Seed": 21,
+  "Tuning_Condition": "MY_DATA|1800|CH_06|Clean",
+  "Source_Artifact": "Results/Parameters/DE_1D_CNN_MY_DATA_Parameters.json",
+  "Reuse_Policy": "Inherited fixed parameters; no V13 re-optimization; train weights anew using V13 inputs.",
+  "Source_Preprocessing": "Legacy comparison preprocessing before V13 window Z-score synchronization."
+}

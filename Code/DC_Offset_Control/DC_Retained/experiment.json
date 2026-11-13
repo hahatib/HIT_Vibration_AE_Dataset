@@ -1,0 +1,87 @@
+{
+  "methods": [
+    "CRD_DS"
+  ],
+  "datasets": [
+    "MY_DATA"
+  ],
+  "seeds": [
+    42,
+    63,
+    84,
+    105,
+    126,
+    147,
+    168,
+    189,
+    210,
+    231
+  ],
+  "rpms": [
+    "800",
+    "1000",
+    "1200",
+    "1400",
+    "1600",
+    "1800",
+    "2000",
+    "2200",
+    "2400",
+    "2800",
+    "3000"
+  ],
+  "snrs": [
+    -12,
+    -11,
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    null
+  ],
+  "channels": [
+    "CH_06"
+  ],
+  "epochs": 100,
+  "output_root": "Results",
+  "preprocessing": {
+    "noise_power_centered": true,
+    "ae_train_dc_removal": false,
+    "window_normalization": "zscore",
+    "pooled_train_zscore": false,
+    "ae_window_normalization": "std_only"
+  },
+  "neural_modules": {
+    "heads": {
+      "Full": {
+        "hidden": 8,
+        "epochs": 960
+      }
+    },
+    "initialization_seed": 20261028,
+    "learning_rate": 0.015,
+    "weight_decay": 0.001,
+    "gradient_clip": 5.0,
+    "inference_batch": 16384
+  },
+  "window_mean": {
+    "var_smoothing": 1e-09
+  },
+  "equivalence": {
+    "input_atol": 1e-06,
+    "input_rtol": 1e-06,
+    "probability_atol": 1e-06,
+    "probability_rtol": 0.0
+  },
+  "data_root": "../../data/Laboratory_Dataset",
+  "reference_results_root": "../DC_Removed/Results",
+  "cpu_threads": 4,
+  "device": "auto"
+}
